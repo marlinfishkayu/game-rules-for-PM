@@ -228,7 +228,7 @@ li {
 
 .poker > img {
   width: 70px;
-  padding: 5px 5px;
+  padding: 0px 1px;
 }
 
 .poker {
@@ -238,7 +238,6 @@ li {
 }
 
 .marker {
-  width: 95%;
   margin: auto;
 }
 
