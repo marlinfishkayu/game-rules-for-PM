@@ -192,15 +192,10 @@ li {
   background-color: #192129;
 }
 
+.p-10{
+  padding: 10px;
+}
 
-
-/* .table .td {
-  padding: 10px 0.5em;
-} */
-
-/* .table .td.img {
-  padding: 10px 0;
-} */
 .space {
   padding: 10px 0.5em;
   text-align: center;
