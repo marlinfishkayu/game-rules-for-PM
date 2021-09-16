@@ -1,0 +1,573 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../static/css/style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title title-color">
+        區塊鏈牛牛遊戲規則
+      </div>
+      <div class="sub-title title-color">
+        簡介
+      </div>
+      <div class="content">
+        區塊鏈牛牛秉承傳統的牛牛遊戲，特別加上SHA-256技術驗證卡牌，以確保遊戲公平公正。遊戲使用一副共52張撲克牌(不計大、小王)，每局向「庄」、「閒1」、「閒2」、「閒3」四家各派發5張牌，比較牌型/牌值大小決定勝負
+      </div>
+      <br>
+      <div class="sub-title title-color">
+        遊戲玩法
+      </div>
+      <div class="content">
+        <ul>
+          <li>
+            每局向每家派發5張牌，先從5張牌中先找出3張可成10或10倍數的組合，餘下2張牌牌值相加，為該局之點數。如遇點數相加超過10點時，則減去10點，為該局點數。「庄」與「閒」家互相先比較牌型，後比較點數大小決定勝負
+          </li>
+          <li>
+            當牌型相同時，先比較牌值，如相同則比較花色，花牌(K、Q、J)為10點；A為1點；其他牌(10、9、8、7、6、5、4、3、2) 則按牌的面值計算。(請查看「牌型介紹」)
+          </li>
+        </ul>
+      </div>
+    <br>
+      <div class="sub-title title-color">
+        獲勝條件
+      </div>
+      <div class="content">
+        玩家可押注「庄」的「平倍」及「翻倍」，以及「閒」的「平倍」及「翻倍」。若押注「閒」，而所押「閒」家的牌型大於「庄」，則獲勝；若押注「庄」，而「庄」的牌型大於該「閒」家，則獲勝
+      </div>
+      <br>
+      <div class="content">
+        玩家可選擇押注以下投注區：
+        <ul>
+          <li>「庄1」：平倍、翻倍 （即「庄」贏「閒1」)</li>
+          <li>「庄2」：平倍、翻倍 （即「庄」贏「閒2」)</li>
+          <li>「庄3」：平倍、翻倍 （即「庄」贏「閒3」)</li>
+          <li>「閒1」：平倍、翻倍 （即「閒1」贏「庄」)</li>
+          <li>「閒2」：平倍、翻倍 （即「閒2」贏「庄」)</li>
+          <li>「閒3」：平倍、翻倍 （即「閒3」贏「庄」)</li>
+          <br/>
+          <li>「平倍」：「庄」與「閒」平倍博弈，派彩不受牌型影響，按<span class="underline">平倍賠率</span>計算</li>
+          <li>「翻倍」：「庄」與「閒」翻倍博弈，派彩根據勝方牌型，按<span class="underline">翻倍賠率</span>計算</li>
+        </ul>
+        <br/>
+        比較大小，以及「平倍賠率」與「翻倍賠率」，請見以下詳細說明
+      </div>
+      <br/>
+      <div class="sub-title title-color">
+        比較大小
+      </div>
+      <div class="content">
+        「庄」與各「閒」家比較大小決定贏輸；在比較過程中，先比較牌型，再比較牌值，最後比較花色*(請見例)
+        <ul>
+          <li>牌型大小：K、Q、J為10點，其餘根據牌面點數計算
+            五公 (任意5張K、Q、J) > 牛牛 > 牛9 > 牛8 > 牛7 > 牛6 > 牛5 > 牛4 > 牛3 > 牛2 > 牛1 > 無牛
+            </li>
+            <li>牌值大小：K > Q > J > 10 > 9 > 8 > 7 > 6 > 5 > 4 > 3 > 2 > A</li>
+            <li>花色大小：黑桃 > 紅心 > 梅花 > 方塊
+                <div class="m_sq_poker">
+                  <img src="../img/m_sq_bac_small_poker_spade.png" alt="">>
+                  <img src="../img/m_sq_bac_small_poker_heart.png" alt="">>
+                  <img src="../img/m_sq_bac_small_poker_club.png" alt="">>
+                  <img src="../img/m_sq_bac_small_poker_diamond.png" alt="">
+                </div>
+            </li>
+        </ul>
+        <div class="content-sub-title">*例：「庄」與「閒1」同為牛8，則從雙方最大的牌開始比較；若雙方最大的牌同為K，則繼續比較花色，如 「閒1」 黑桃K ＞ 「庄1」梅花K，「閒1」贏</div>
+      </div>
+      <br/>
+      <div class="sub-title title-color">
+        操作及下注指南
+      </div>
+      <div class="content">
+        <ol>
+          <li>
+            開局後，開始下注倒數
+          </li>
+          <li>
+            系統從牌靴中先開頭牌，以頭牌的點數決定開始發牌位置，從庄家方開始算起，即按「庄」>「閒1」>「閒2」>「閒3」的次序派牌，每家5張牌，發完一家再發下一家
+          </li>
+          <li>
+            在各個下注區押注籌碼後，表示押該選項贏；各「庄」、「閒」均有平倍及翻倍下注選項
+          </li>
+          <li>
+            每個單注金額不能高於或低於已設置個人限紅的上、下限
+          </li>
+          <li>
+            若連續5局未下注，則會被強制退出遊戲檯
+          </li>
+          <li>
+            倒數結束後，遊戲檯會停止下注，而已確認之注碼均不得更改或取回
+          </li>
+          <li>
+            停止下注後，會按發牌次序的順序開牌
+          </li>
+          <li>
+            如遇結算錯誤，按照當期視頻結果重新結算
+          </li>
+        </ol>
+      </div>
+      <br/>
+      <div class="sub-title title-color">
+        頭牌規則
+      </div>
+      <div>
+        <ul class="content">
+          <li>
+            按下表規則，決定發牌順序
+            
+          </li>
+        </ul>
+            <div class="table">
+              <div class="row">
+                <div class="th auto">
+                  頭牌
+                </div>
+                <div class="th auto">
+                  派牌順序
+                </div>
+              </div>
+              <div class="row">
+                <div class="td auto">A, 5, 9, K</div>
+                <div class="td auto"><div class="space">庄 → 閒1 → 閒2 → 閒3</div></div>
+              </div>
+              <div class="row">
+                <div class="td auto">2, 6, 10,</div>
+                <div class="td auto"><div class="space">閒1 → 閒2 → 閒3 → 庄</div></div>
+              </div>
+              <div class="row">
+                <div class="td auto">3, 7, J </div>
+                <div class="td auto"><div class="space">閒2 → 閒3 → 庄 → 閒1</div></div>
+              </div>
+              <div class="row">
+                <div class="td auto">4, 8, Q </div>
+                <div class="td auto"><div class="space">閒3 → 庄 → 閒1 → 閒2</div></div>
+              </div>
+              <div class="row">
+                <div class="td auto"><div class="space">按上方表列順序，每家發5張牌再輪到下一家</div></div>
+              </div>
+            </div>
+      </div>
+      <br>
+      <div class="sub-title title-color">
+        牌型介紹
+      </div>
+      <div>
+        <div class="table">
+          <div class="row">
+            <div class="th first">牌型</div>
+            <div class="th second" style="flex: .5;">圖解</div>
+            <div class="th auto" style="flex: .4;">備注</div>
+          </div>
+          <div class="row">
+            <div class="td first content-sub-title">五公</div>
+            <div class="td rosecond img">
+            <div class="td rotdfirst img">
+              <div class="poker">
+                <img src="../img/poker_cloverK.png" alt="">
+                <img src="../img/poker_heartQ.png" alt="">
+                <img src="../img/poker_spadeJ.png" alt="">
+                <img src="../img/poker_heartJ.png" alt="">
+                <img src="../img/poker_diamondJ.png" alt="">
+              </div>
+            </div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div class="space">由5張K、Q、J 組成</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first content-sub-title">牛牛</div>
+            <div class="td rosecond img">
+            <div class="td rotdfirst img">
+              <div class="poker">
+                <img src="../img/poker_cloverK.png" alt="">
+                <img src="../img/poker_heartQ.png" alt="">
+                <img src="../img/poker_spadeJ.png" alt="">
+                <img src="../img/poker_heart6.png" alt="">
+                <img src="../img/poker_clover4.png" alt="">
+              </div>
+            </div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div class="space">3張牌組成10的倍數，剩餘2張牌相加為10或20</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first content-sub-title">牛9</div>
+            <div class="td rosecond img">
+            <div class="td rotdfirst img">
+              <div class="poker">
+                <img src="../img/poker_spade10.png" alt="">
+                <img src="../img/poker_clover7.png" alt="">
+                <img src="../img/poker_clover3.png" alt="">
+                <img src="../img/poker_diamond5.png" alt="">
+                <img src="../img/poker_clover4.png" alt="">
+              </div>
+            </div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div class="space">3張牌組成10的倍數，剩餘2張牌相加為9或19</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first content-sub-title">牛8</div>
+            <div class="td rosecond img">
+            <div class="td rotdfirst img">
+              <div class="poker">
+                <img src="../img/poker_heartQ.png" alt="">
+                <img src="../img/poker_heart6.png" alt="">
+                <img src="../img/poker_clover4.png" alt="">
+                <img src="../img/poker_diamond5.png" alt="">
+                <img src="../img/poker_clover3.png" alt="">
+              </div>
+            </div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div class="space">3張牌組成10的倍數，剩餘2張牌相加為8或18</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first content-sub-title">牛7</div>
+            <div class="td rosecond img">
+            <div class="td rotdfirst img">
+              <div class="poker">
+                <img src="../img/poker_cloverK.png" alt="">
+                <img src="../img/poker_heartQ.png" alt="">
+                <img src="../img/poker_spadeJ.png" alt="">
+                <img src="../img/poker_heartJ.png" alt="">
+                <img src="../img/poker_clover7.png" alt="">
+              </div>
+            </div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div class="space">3張牌組成10的倍數，剩餘2張牌相加為7或17</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first content-sub-title">牛6</div>
+            <div class="td rosecond img">
+            <div class="td rotdfirst img">
+              <div class="poker">
+                <img src="../img/poker_cloverK.png" alt="">
+                <img src="../img/poker_heartQ.png" alt="">
+                <img src="../img/poker_spadeJ.png" alt="">
+                <img src="../img/poker_heartJ.png" alt="">
+                <img src="../img/poker_heart6.png" alt="">
+              </div>
+            </div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div class="space">3張牌組成10的倍數，剩餘2張牌相加為6或16</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first content-sub-title">牛5</div>
+            <div class="td rosecond img">
+            <div class="td rotdfirst img">
+              <div class="poker">
+                <img src="../img/poker_cloverK.png" alt="">
+                <img src="../img/poker_heartQ.png" alt="">
+                <img src="../img/poker_spadeJ.png" alt="">
+                <img src="../img/poker_heartJ.png" alt="">
+                <img src="../img/poker_diamond5.png" alt="">
+              </div>
+            </div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div class="space">3張牌組成10的倍數，剩餘2張牌相加為5或15</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first content-sub-title">牛4</div>
+            <div class="td rosecond img">
+            <div class="td rotdfirst img">
+              <div class="poker">
+                <img src="../img/poker_cloverK.png" alt="">
+                <img src="../img/poker_heartQ.png" alt="">
+                <img src="../img/poker_spadeJ.png" alt="">
+                <img src="../img/poker_heartJ.png" alt="">
+                <img src="../img/poker_clover4.png" alt="">
+              </div>
+            </div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div class="space">3張牌組成10的倍數，剩餘2張牌相加為4或14</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first content-sub-title">牛3</div>
+            <div class="td rosecond img">
+            <div class="td rotdfirst img">
+              <div class="poker">
+                <img src="../img/poker_cloverK.png" alt="">
+                <img src="../img/poker_heartQ.png" alt="">
+                <img src="../img/poker_spadeJ.png" alt="">
+                <img src="../img/poker_heartJ.png" alt="">
+                <img src="../img/poker_clover3.png" alt="">
+              </div>
+            </div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div class="space">3張牌組成10的倍數，剩餘2張牌相加為3或13</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first content-sub-title">牛2</div>
+            <div class="td rosecond img">
+            <div class="td rotdfirst img">
+              <div class="poker">
+                <img src="../img/poker_cloverK.png" alt="">
+                <img src="../img/poker_heartQ.png" alt="">
+                <img src="../img/poker_spadeJ.png" alt="">
+                <img src="../img/poker_clover7.png" alt="">
+                <img src="../img/poker_diamond5.png" alt="">
+              </div>
+            </div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div class="space">3張牌組成10的倍數，剩餘2張牌相加為2或12</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first content-sub-title">牛1</div>
+            <div class="td rosecond img">
+            <div class="td rotdfirst img">
+              <div class="poker">
+                <img src="../img/poker_cloverK.png" alt="">
+                <img src="../img/poker_heartQ.png" alt="">
+                <img src="../img/poker_spadeJ.png" alt="">
+                <img src="../img/poker_clover7.png" alt="">
+                <img src="../img/poker_clover4.png" alt="">
+              </div>
+            </div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div class="space">3張牌組成10的倍數，剩餘2張牌相加為1或11</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first content-sub-title">無牛</div>
+            <div class="td rosecond img">
+            <div class="td rotdfirst img">
+              <div class="poker">
+                <img src="../img/poker_clover7.png" alt="">
+                <img src="../img/poker_heart6.png" alt="">
+                <img src="../img/poker_clover4.png" alt="">
+                <img src="../img/poker_diamond4.png" alt="">
+                <img src="../img/poker_clover3.png" alt="">
+              </div>
+            </div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div class="space">5張牌中沒有任意3張牌點數之和為10的整數倍。例如: 7、6、4、4、3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="sub-title title-color">
+        派彩賠率
+      </div>
+      <div>
+        <ul  class="content">
+          <li>
+            「平倍」：「庄」與「閒」平倍博弈，派彩不受牌型影響，按<span class="underline">平倍賠率</span>計算 
+          </li>
+          <li>
+            「翻倍」：「庄」與「閒」翻倍博弈，派彩根據勝方牌型，按<span class="underline">翻倍賠率</span>計算
+          </li>
+          <li>
+            玩家下注「翻倍」項目時，帳戶結餘必須比投注金額高出5倍；下注平倍項目時則不需要 (詳情請查看「投注與派彩範例」)
+          </li>
+        </ul>
+        <br/>
+        <div class="table">
+          <div class="row">
+            <div class="th auto">閒(庄)家贏賠率</div>
+          </div>
+          <div class="row">
+            <div class="td first content-sub-title">
+              <div class="space">閒(庄)家牌型</div>
+            </div>
+            <div class="td second content-sub-title">
+              <div>翻倍賠率</div>
+            </div>
+            <div class="td auto content-sub-title" style="flex: .4;">
+              <div>平倍賠率</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first">
+              <div>五公</div>
+            </div>
+            <div class="td second">
+              <div>1賠4.75</div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div>1賠0.95</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first">
+              <div>牛牛</div>
+            </div>
+            <div class="td second">
+              <div>1賠2.85</div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div>1賠0.95</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first">
+              <div>牛9 - 牛7</div>
+            </div>
+            <div class="td second">
+              <div>1賠1.90</div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div>1賠0.95</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first">
+              <div>一般牌型</div>
+            </div>
+            <div class="td second">
+              <div>1賠0.95</div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div>1賠0.95</div>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div class="table">
+          <div class="row">
+            <div class="th auto">閒(庄)家輸賠率</div>
+          </div>
+          <div class="row">
+            <div class="td first content-sub-title">
+              <div class="space">閒(庄)家牌型</div>
+            </div>
+            <div class="td second content-sub-title">
+              <div>翻倍賠率</div>
+            </div>
+            <div class="td auto content-sub-title" style="flex: .4;">
+              <div>平倍賠率</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first">
+              <div>五公</div>
+            </div>
+            <div class="td second">
+              <div>1賠5</div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div>1賠1</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first">
+              <div>牛牛</div>
+            </div>
+            <div class="td second">
+              <div>1賠3</div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div>1賠1</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first">
+              <div>牛9 - 牛7</div>
+            </div>
+            <div class="td second">
+              <div>1賠2</div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div>1賠1</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first">
+              <div>一般牌型</div>
+            </div>
+            <div class="td second">
+              <div>1賠1</div>
+            </div>
+            <div class="td auto" style="flex: .4;">
+              <div>1賠1</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="sub-title title-color"> 投注與派彩範例 </div>
+      <div>
+        <div class="content"> 例子： 會員A 「可用餘額」是1,100，翻倍最高的投注額為220；平倍最高的投注額則為1,100 </div>
+        <br />
+        <ul class="content">
+          <li class="content-sub-title">範例1</li>
+        </ul>
+        <div class="table">
+          <div class="row">
+            <div class="th auto" style="flex: .4;">條件</div>
+            <div class="th auto"><div class="space">玩家押注100於「閒2 翻倍」</div></div>
+          </div>
+          <div class="row">
+            <div class="td auto" style="flex: .4;">可用餘額</div>
+            <div class="td auto">扣除500</div>
+          </div>
+          <div class="row">
+            <div class="td auto" style="flex: .8;"><div class="space">庄／閒持牌</div></div>
+            <div class="td auto"><div class="space">「庄」持牌：牛7</div></div>
+            <div class="td auto"><div class="space">「閒2」持牌：牛5</div></div>
+          </div>
+          <div class="row">
+            <div class="td auto" style="flex: .4;">遊戲結果</div>
+            <div class="td auto">庄」以牛7勝「閒2」牛5 *</div>
+          </div>
+          <div class="row">
+            <div class="td auto" style="flex: .8;">派彩</div>
+            <div class="td auto"><div class="space">退回餘額300</div></div>
+            <div class="td auto"><div class="space">玩家輸掉200</div></div>
+          </div>
+        </div>
+        <div class="marker content">*(牛7「翻倍」輸賠率為1賠2)</div>
+        <br>
+        <ul class="content">
+          <li class="content-sub-title">範例2</li>
+        </ul>
+        <div class="table">
+          <div class="row">
+            <div class="th auto" style="flex: .4;"> 條件 </div>
+            <div class="th auto"><div class="space">玩家押注100於「閒2 翻倍」</div></div>
+          </div>
+          <div class="row">
+            <div class="td auto" style="flex: .4;"><div class="space">可用餘額</div></div>
+            <div class="td auto">扣除500</div>
+          </div>
+          <div class="row">
+            <div class="td auto" style="flex: .8;"><div class="space">庄／閒持牌</div></div>
+            <div class="td auto"><div class="space">庄家持牌：牛8</div></div>
+            <div class="td auto"><div class="space">閒2持牌：牛牛</div></div>
+          </div>
+          <div class="row">
+            <div class="td auto" style="flex: .4;">遊戲結果</div>
+            <div class="td auto">「閒2」以牛牛勝「庄」牛8*</div>
+          </div>
+          <div class="row">
+            <div class="td auto" style="flex: .8;">派彩</div>
+            <div class="td auto">退回金額500</div>
+            <div class="td auto">派彩：285</div>
+          </div>
+        </div>
+        <div class="marker content">*(牛牛「翻倍」贏賠率為1賠2.85)</div>
+        <br/>
+      </div>
+  </body>
+</html>

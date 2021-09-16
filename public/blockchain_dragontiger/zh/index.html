@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../static/css/style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title title-color">
+        區塊鏈龍虎遊戲規則
+      </div>
+      <div class="sub-title title-color">
+        獲勝條件
+      </div>
+      <div class="content">
+        <ul>
+          <li>
+            區塊鏈龍虎秉承傳統的龍虎遊戲規則，特別之處在於可透過SHA-256技術驗證牌靴，確保遊戲公平公正
+          </li>
+          <li>
+            遊戲分「龍」、「虎」兩方，只計算牌面點數，不比花色；點數較大的一方將獲得勝利
+          </li>
+          <li>
+            A為1點；J為11點；Q為12點；K為13點；其它牌 (2、3、4、5、6、7、8、9、10)依牌面數字面值
+          </li>
+        </ul>
+      </div>
+      <br>
+      <div class="sub-title title-color">
+        操作及下注指南
+      </div>
+      <div class="content">
+        <ol>
+          <li>
+            開局後，下注倒數開始
+          </li>
+          <li>
+            每局派牌時，先銷去一張牌，然後按照「龍」>「虎」的順序派牌
+          </li>
+          <li>
+            玩家於下注區押注籌碼後，表示押該選項贏出；下注區包括：「龍」、「虎」、「和」
+          </li>
+          <li>
+            每個單注金額不能高於或低於已設置的個人限紅之上、下限 
+          </li>
+          <li>
+            若連續5局未下注，則會被強制退出遊戲檯
+          </li>
+          <li>
+            倒數結束後，遊戲檯會停止下注，而已確認之注碼均不得更改或取回
+          </li>
+          <li>
+            停止下注後，會先開「龍」的牌，然後再開「虎」的牌
+          </li>
+          <li>
+            完成開牌後，可驗證已開之卡牌
+          </li>
+        </ol>
+      </div>
+      <br>
+      <div class="sub-title title-color">
+        賠彩規則
+      </div>
+      <div class="content">
+        <ol type="a">
+          <li class="content-sub-title">押「龍」(賠彩－1 賠 1)</li>
+          <ul class="dtul">
+            <li>
+              若「龍」的牌點數大於「虎」的牌點數，任何押於「龍」贏的投注將按 1 賠 1 支付，並將返還押於「龍」贏的初始投注金；
+            </li>
+            <li>
+              若「龍」的牌點數與「虎」的牌點數相同，任何押於「龍」贏的投注將返還一半*
+            </li>
+            <li>
+              否則，任何押於「龍」的投注將被移除
+            </li>
+          </ul>
+          <li class="content-sub-title">押「虎」(賠彩－1 賠 1)</li>
+          <ul class="dtul">
+            <li>若「虎」的牌點數高於「龍」的牌點數，任何押於「虎」贏的投注將按 1 賠 1 支付，並將返還押於「虎」贏的初始投注金；</li>
+            <li>若「虎」的牌點數與「龍」的牌點數相同，任何押於「虎」贏的投注將退還一半*</li>
+            <li>否則，任何押於「虎」的投注將被移除</li>
+          </ul>
+          <li class="content-sub-title">押「和」(賠彩－1 賠 8)</li>
+          <ul class="dtul">
+            <li>若「龍」與「虎」的牌點數相同，任何押於「和」的投注將按 1 賠 8 支付，並將返還押於「和」的初始投注金*</li>
+            <li>否則，任何押於「和」的投注將被移除</li>
+          </ul>
+        </ol>
+      </div>
+    <div class="content-sub-title">*備註：</div>
+      <br>
+      <div class="table">
+        <div class="row">
+          <div class="th first">下注項目</div>
+          <div class="th second">派彩</div>
+          <div class="th auto" style="flex: .4;">開「和」</div>
+        </div>
+        <div class="row">
+          <div class="td first content-sub-title">龍</div>
+          <div class="td second">1 賠 1</div>
+          <div class="td auto" style="flex: .4;">
+            <div class="space">退回一半下注金額</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="td first content-sub-title">虎</div>
+          <div class="td second">1 賠 1</div>
+          <div class="td auto" style="flex: .4;">
+            <div class="space">退回一半下注金額</div></div>
+        </div>
+        <div class="row">
+          <div class="td first content-sub-title">和</div>
+          <div class="td second">1 賠 8</div>
+          <div class="td auto" style="flex: .4;">
+            <div class="space">贏得8倍下注金額</div></div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </body>
+</html>

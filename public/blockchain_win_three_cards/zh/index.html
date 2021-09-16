@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../static/css/style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title title-color">
+        區塊鏈炸金花遊戲規則
+      </div>
+      <div class="sub-title title-color">
+        簡介
+      </div>
+      <div class="content">
+        區塊鏈炸金花秉承傳統的炸金花遊戲，特別加上SHA-256技術驗證卡牌，以確保遊戲公平公正。遊戲使用一副共52張撲克牌(不計大、小王)，每局「龍」、「鳳」兩家各派發3張牌，比較牌型/牌值大小決定勝負。遊戲裡，玩家可以投注「龍」、「鳳」，以及其他特殊牌型
+      </div>
+      <br>
+      <div class="sub-title title-color">
+        獲勝條件
+      </div>
+      <div class="content">
+        <ul>
+          <li>
+            只計算3張牌的牌型/牌值，不比花色
+          </li>
+          <li>
+            押中牌型/牌值較大者，或/及押中勝出方的牌型者為贏
+          </li>
+          <li>
+            如果「龍」與「鳳」雙方各3張牌的牌型及牌值完全一致，則為「和局」，退回玩家所有下注籌碼
+          </li>
+        </ul>
+      </div>
+      <br>
+      <div class="sub-title title-color">
+        牌型及牌值比較
+      </div>
+      <div class="content">
+        <ul>
+          <li>
+            牌值大小：A > K > Q > J > 10 > 9 > 8 > 7 > 6 > 5 > 4 > 3 > 2，不分花色；若「龍」與「鳳」的牌型及牌值完全相同，則為「和局」
+          </li>
+          <li>
+            牌型大小：「豹子」 > 「同花順」 > 「同花」 > 「順子」 > 「對子」 > 「高牌」；雙方持相同牌型時，優先比較點數最大的牌，若點數相同則比第二大牌，以此類推
+          </li>
+          <li>
+            「豹子殺手」>「豹子」：當「豹子殺手」與「豹子」<span class="underline">同時出現</span>，「豹子殺手」比「豹子」為大
+          </li>
+          <li>
+            在沒有「豹子」的情況下，「豹子殺手」為最小牌型
+          </li>
+          <li>
+            「同花順」及「順子」牌型按順序比較：A K Q＞K Q J＞Q J 10＞J 10 9＞10 9 8 ＞9 8 7＞8 7 6＞7 6 5＞6 5 4＞5 4 3＞4 3 2＞3 2 A；當中以「A K Q」為最大，「3 2 A」為最小；只有在「同花順」和「順子」牌型中，「A」可作為最大或最小的牌，其餘牌型中「A」為最大的單牌
+          </li>
+          <li>
+            如果「龍」、「鳳」的首2張牌為對子，並且點數相同時，結果會以最後單牌的點數大小決定
+          </li>
+        </ul>
+      </div>
+      <br>
+      <div class="sub-title title-color">
+        牌型介紹
+      </div>
+      <div>
+        <div class="table">
+          <div class="row">
+            <div class="th first">牌型</div>
+            <div class="th second" style="flex: .5;">解釋</div>
+            <div class="th auto" style="flex: .4;">例子</div>
+          </div>
+          <div class="row">
+            <div class="td first">豹子殺手</div>
+            <div class="td rosecond">
+              <div class="roleft">
+                3張不同花色的5 3 2牌
+              </div>
+            </div>
+            <div class="td auto img" style="flex: .4;">
+              <div class="poker">
+                <img src="../img/poker_diamond5.png" alt="">
+                <img src="../img/poker_spade3.png" alt="">
+                <img src="../img/poker_clover2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first">豹子</div>
+            <div class="td rosecond">
+              <div class="roleft">
+                3張點數相同的牌<br/>
+                例：A A A、2 2 2
+              </div>
+            </div>
+            <div class="td auto img" style="flex: .4;">
+              <div class="poker">
+                <img src="../img/poker_spadeA.png" alt="">
+                <img src="../img/poker_heartA.png" alt="">
+                <img src="../img/poker_cloverA.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first">同花順</div>
+            <div class="td rosecond">
+              <div class="roleft">
+                花色相同的順子<br class="break"/>
+                例：黑桃9 8 7、紅心6 5 4。<br/>
+                最大的同花順為花色相同的A K Q，<br/>
+                最小的同花順為花色相同的3 2 A
+              </div>
+            </div>
+            <div class="td auto img" style="flex: .4;">
+              <div class="poker">
+                <img src="../img/poker_cloverA.png" alt="">
+                <img src="../img/poker_cloverK.png" alt="">
+                <img src="../img/poker_cloverQ.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first">同花</div>
+            <div class="td rosecond">
+              <div class="roleft">
+                花色相同，非順子<br/>
+                例：黑桃8 6 3，梅花5 4 2。<br/>
+              </div>
+            </div>
+            <div class="td auto img" style="flex: .4;">
+              <div class="poker">
+                <img src="../img/poker_clover5.png" alt="">
+                <img src="../img/poker_clover4.png" alt="">
+                <img src="../img/poker_clover2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first">順子</div>
+            <div class="td rosecond">
+              <div class="roleft">
+                花色不同的順子<br/>
+                例：黑桃7 紅心6 方塊5。<br/>
+                最大的順子為花色不同的A K Q，<br/>
+                最小的順子為花色不同的3 2 A<br/>
+                注意：2 A K不是順子
+              </div>
+            </div>
+            <div class="td auto img" style="flex: .4;">
+              <div class="poker">
+                <img src="../img/poker_diamond3.png" alt="">
+                <img src="../img/poker_clover2.png" alt="">
+                <img src="../img/poker_spadeA.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first">對子</div>
+            <div class="td rosecond">
+              <div class="roleft">
+                2張點數相同的牌<br/>
+                <ul>
+                  <li>雙方牌型為對子時，先比較對子點數大小；</li>
+                  <li>若點數相同再比較單張牌的點數大小</li>
+                </ul>
+              </div>
+            </div>
+            <div class="td auto img" style="flex: .4;">
+              <div class="poker">
+                <img src="../img/poker_diamond10.png" alt="">
+                <img src="../img/poker_heart6.png" alt="">
+                <img src="../img/poker_clover6.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="td first"><div class="space">高牌（又名散牌）</div></div>
+            <div class="td rosecond">
+              <div class="roleft">
+                3張牌不能組成任何牌型
+              </div>
+            </div>
+            <div class="td auto img" style="flex: .4;">
+              <div class="poker">
+                <img src="../img/poker_diamond10.png" alt="">
+                <img src="../img/poker_clover5.png" alt="">
+                <img src="../img/poker_diamond3.png" alt="">
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <br/>
+        <div class="sub-title title-color">
+          操作及下注指南
+        </div>
+        <div class="content">
+          <ol>
+            <li>
+              開局後，立刻開始下注倒時
+            </li>
+            <li>
+              「龍」、「鳳」各得3張暗牌（即牌面向下），並按照「龍」>「鳳」>「龍」>「鳳」>「龍」>「鳳」的順序派牌
+            </li>
+            <li>
+              在各個下注區押注籌碼後，表示押該選項贏；本遊戲共有7個下注區，包括：「龍」、「鳳」、「對8以上」、「豹子」、「同花順」、「同花」及「順子」
+            </li>
+            <li>
+              每個單注金額不能高於或低於已設置個人限紅的上、下限 
+            </li>
+            <li>
+              若連續5局未下注，則會被強制退出遊戲檯
+            </li>
+            <li>
+              倒數結束後，遊戲檯會停止下注，而已確認之注碼均不得更改或取回
+            </li>
+            <li>
+              停止下注後，會先開「龍」方的首兩張牌，再開「鳳」方的首兩張牌；然後開「龍」方的第三張牌，最後開「鳳」方的第三張牌
+            </li>
+            <li>
+              牌型或牌值較大的一方即為獲勝方；如果雙方牌型及牌值完全一致，即為「和局」，會退回玩家所有下注籌碼；牌局結束後即洗牌。
+            </li>
+            <li>
+              如遇結算錯誤，按照當期視頻結果重新結算
+            </li>
+          </ol>
+        </div>
+        <br>
+        <div class="sub-title title-color">
+          派彩賠率
+        </div>
+        <div>
+          <div class="table">
+            <div class="row">
+              <div class="th auto" >
+                投注選項
+              </div>
+              <div class="th auto" style="flex: .5;">
+                賠率
+              </div>
+            </div>
+            <div class="row">
+              <div class="td auto">龍</div>
+              <div class="td auto" style="flex: .5;">1賠0.97</div>
+            </div>
+            <div class="row">
+              <div class="td auto">鳳</div>
+              <div class="td auto" style="flex: .5;">1賠0.97</div>
+            </div>
+            <div class="row">
+              <div class="td auto" >
+                <div>對8以上</div>
+                <div class="space">(對9 - 對A、順子、同花、同花順、豹子)</div>
+              </div>
+              <div class="td auto" style="flex: .5;">1賠2</div>
+            </div>
+            <div class="row">
+              <div class="td auto">順子</div>
+              <div class="td auto" style="flex: .5;">1賠7</div>
+            </div>
+            <div class="row">
+              <div class="td auto">同花</div>
+              <div class="td auto" style="flex: .5;">1賠8</div>
+            </div>
+            <div class="row">
+              <div class="td auto">同花順</div>
+              <div class="td auto" style="flex: .5;">1賠100</div>
+            </div>
+            <div class="row">
+              <div class="td auto">豹子</div>
+              <div class="td auto" style="flex: .5;">1賠120</div>
+            </div>
+          </div>
+          <br/>
+          <div class="content">
+            注意：
+          <ul>
+            <li>
+              玩家下注以上玩法時，只有贏的一方以該牌型獲勝才算<br/>
+              例子：
+              <ol>
+                <li>玩家下注「順子」，「龍」以「順子」贏了則按「順子」的賠率派彩</li>
+                <li>玩家下注「順子」，牌局結果「龍」為「順子」、「鳳」為「同花」，則玩家下注的「順子」為輸</li>
+              </ol>
+            </li>
+            <li>
+              雙方牌型相同時，優先比較點數最大的牌，若點數相同則比第二大牌，以此類推
+            </li>
+          </ul>
+          </div>
+        </div>
+        <br/>
+      </div>
+      </div>
+  </body>
+</html>
